@@ -1,0 +1,10 @@
+type Task {
+  userId: Int!
+  name: String!
+  complete: Boolean!
+  date: String!
+}
+
+type Query {
+  allTasks: [Task!]!
+}

@@ -1,0 +1,12 @@
+{
+  "name": "tareas-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Andrés Díaz Soto <andres.diaz.soto@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.1"
+  }
+}
