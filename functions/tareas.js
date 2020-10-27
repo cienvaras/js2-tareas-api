@@ -1,4 +1,4 @@
-require('dotenv').config();
+// require('dotenv').config();
 const fetch = require('node-fetch');
 
 const GET_ALL_TASKS = `
