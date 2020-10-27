@@ -89,9 +89,7 @@ async function getAllTasks(uid) {
 async function createTask(uid, taskData) {
   const { data } = await sendQuery(CREATE_TASK, {
     userId: uid,
-    name: taskData.nombre,
-    complete: taskData.completo,
-    date: taskData.fecha,
+    ...taskData,
   });
   return {
     statusCode: 201,
@@ -107,9 +105,7 @@ async function updateTask(uid, taskId, taskData) {
   const { data } = await sendQuery(UPDATE_TASK, {
     id: taskId,
     userId: uid,
-    name: taskData.nombre,
-    complete: taskData.completo,
-    date: taskData.fecha,
+    ...taskData,
   });
   if (!data.updateTask) {
     return {
