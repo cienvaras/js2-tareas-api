@@ -1,6 +1,8 @@
 [build]
-  publish = "docs"
-  functions = "functions"
+  base = './'
+  publish = "docs/"
+  command = "echo 'Hello netlify!'"
+  functions = "functions/"
 
 [[redirects]]
   from = "/api/*"
