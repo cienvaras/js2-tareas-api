@@ -167,7 +167,7 @@ exports.handler = async (event, context, callback) => {
         headers: {
           'content-type': 'application/json',
           'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Methods': 'GET, POST, PUT',
+          'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE',
         },
         body: JSON.stringify({}),
       };
