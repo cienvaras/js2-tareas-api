@@ -3,7 +3,7 @@ const fetch = require('node-fetch');
 
 const GET_ALL_TASKS = `
   query {
-    allTasks {
+    allTasks(_size: 99999) {
       data {
         _id
         userId
